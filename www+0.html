@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<!-- Use the following line to embed this file within another web page:
+
+<iframe src="www+0.html" width="4" height="4" frameborder="0"></iframe>
+
+-->
+
+<html lang="">
+
+<head>
+<title>www+0</title>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="user-scalable=no"/>
+<style>
+body {margin: 0;}
+</style>
+
+<script
+src="https://vectorgraphics.github.io/asymptote/base/webgl/asygl-1.01.js">
+</script>
+
+<script>
+
+canvasWidth=4;
+canvasHeight=4;
+
+webgl2=false;
+ibl=false;
+absolute=false;
+
+minBound=[-1.000111,-1.000214,-8.440561];
+maxBound=[0.9999523,1.000307,-4.975847];
+orthographic=false;
+angleOfView=0.4432414;
+initialZoom=1;
+viewportMargin=[0.5,0.5];
+
+zoomFactor=1.05;
+zoomPinchFactor=10;
+zoomPinchCap=100;
+zoomStep=0.1;
+shiftHoldDistance=20;
+shiftWaitTime=200;
+vibrateTime=25;
+
+Lights=[new Light(
+[0.4477358,0.4972609,0.7431448],
+[1,1,1]),
+];
+
+Background=[1,1,1,1];
+
+Transform=[-0.624695,
+-0.2328101,
+0.745356,
+-3.866002e-05,
+0.7808688,
+-0.1862481,
+0.5962848,
+7.043771e-05,
+-2.775558e-17,
+0.9545214,
+0.2981424,
+-4.422535e-05,
+0,
+6.938894e-18,
+0,
+1];
+
+material(
+[0,1,0,0.5],
+[0,0,0,1],
+[0.75,0.75,0.75,1],
+0.7,
+0,
+0.04);
+
+sphere([-7.915333e-05,4.633249e-05,-6.708204],1,0,0);
+
+</script>
+</head>
+
+<body style="overflow: hidden;" onload="webGLStart();">
+<canvas id="Asymptote" width="4" height="4" style="border: none; cursor: pointer;">
+</canvas>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+  size(300,0);
+  import geometry;
+  pair A=0, B=(1,0), C=(1,.5), D=C+length(B-C)*unit(A-C), F=A+unit(B-A)*((sqrt(5)-1)/2);
+  pen p=linewidth(.5mm);
+  draw(A--C);
+  draw(A--B,linewidth(.5mm)+blue);
+  draw(C--F,blue);   
+  draw(B--C);
+  draw(A--D);
+  draw(B--F,linewidth(2mm));
+  label("$A$",A,SW);
+  label("$B$",B,dir(-45));
+  label("$C$",C,NE);
+  dot(Label("$D$",D,N));
+  dot(Label("$F$",F,2*NE));
+  //markangle(A,C,B);
+  draw(arc(A,D,F, CW), Arrow);
+  draw(arc(C,B,D, CW), Arrow);
+  distance("$1$",offset=5mm,joinpen=dashed,A,B);
+  distance("$\frac{AB}{2}$",offset=5mm,joinpen=dashed,B,C);
+  distance("$\frac{\sqrt{5}+1}{2}$",offset=10mm,joinpen=dashed,A,F,blue);
+  distance("$\frac{\sqrt{5}AB}{2}$",offset=7mm,joinpen=dashed,C,A);
+  perpendicular(B,NE,C-B);
+
+
+
+
